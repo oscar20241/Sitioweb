@@ -60,16 +60,22 @@ body {
 @media screen and (max-width: 480px) {
     .header {
         padding: 2%;
-        height: 8%;
+        height: 10%;
     }
-
-    .header .nav-links li {
+    * {
+        font-family: 'Pathway Extreme';
+        box-sizing: border-box;
+        margin: 0;
         padding: 0;
-        margin: 5px 0; /* Ajusta el espacio entre los elementos en pantallas de celular */
+        font-size: 10px;
     }
 
-    .header .btn button {
-        margin-left: 0; /* Elimina el margen izquierdo en pantallas de celular */
-    }
+    
+.header .LOGO img {
+    margin-top: 2%;
+    max-width: 45%;
+    max-height: auto;
+}
+
 }
 
