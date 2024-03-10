@@ -1,0 +1,75 @@
+* {
+    font-family: 'Pathway Extreme';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 4%;
+}
+
+body {
+    background-color: #FCB6C8;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre los elementos en pantallas más pequeñas */
+    align-items: center;
+    height: 15%;
+    padding:  5%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header .INICIO {
+   margin-right: 45%;
+    max-height: auto;
+}
+.SUBTITULO {
+    
+   margin-left: 35%;
+    
+}
+
+.header .LOGO {
+    cursor: pointer;
+}
+
+.header .LOGO img {
+    margin-top: 2%;
+    max-width: 25%;
+    max-height: auto;
+}
+
+.header .LOGO img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.header .btn button:hover {
+    background-color: #007dda;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Consulta de medios para dispositivos más pequeños (celulares) */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 2%;
+        height: 8%;
+    }
+
+    .header .nav-links li {
+        padding: 0;
+        margin: 5px 0; /* Ajusta el espacio entre los elementos en pantallas de celular */
+    }
+
+    .header .btn button {
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas de celular */
+    }
+}
+
